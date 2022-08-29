@@ -1,0 +1,22 @@
+.strength {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.strength__textWithImage {
+    width: 265px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.strength__content {
+    margin: 20px 0;
+}
+
+

@@ -8,12 +8,12 @@ const Navbar = () => {
             <nav className={styles.nav}>
                 <ul className={styles.nav__list}>
                     <div className={styles.nav__div}>
-                        <li className={styles.nav__item}><Image src='/facebook.svg' alt='facebook' height={30}
+                        <li className={styles.nav__item}><Image src='/svg/facebook.svg' alt='facebook' height={30}
                                                                 width={30}
                                                                 className={styles.nav__icon}/>
                         </li>
                         <li className={styles.nav__item}>
-                            <Image src='/youtube.svg' alt='youtube' height={30} width={30}
+                            <Image src='/svg/youtube.svg' alt='youtube' height={30} width={30}
                                    className={styles.nav__icon}/>
                         </li>
                     </div>

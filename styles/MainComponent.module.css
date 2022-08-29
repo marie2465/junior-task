@@ -2,15 +2,11 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 0;
-
-}
-
-.container__background {
+    height: auto;
+    width: 100%;
     background-image: url("../public/60minutecarbackgound.png");
-    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
-    clip-path: border-box;
 }
 
 .main_content {
@@ -39,13 +35,13 @@
     align-content: center;
     text-align: center;
     margin: 0 0 20px 0;
+    color: white;
 }
 
 .edit__text {
     color: #ab8950;
-    width: 100%;
     margin: 0 0 30px 0;
-    text-align: start;
+    align-content: start;
 }
 
 .button {
@@ -99,6 +95,10 @@
     align-items: center;
 }
 
+.forms_text {
+    color: #fad98c;
+}
+
 .forms__input {
     flex: 0 1 100%;
     color: #152633;
@@ -120,4 +120,12 @@
 
 .forms__input:focus {
     outline: none;
+}
+
+.elementor__shape {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 90%);
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
