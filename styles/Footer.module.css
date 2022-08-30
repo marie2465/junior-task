@@ -1,0 +1,40 @@
+.footer {
+
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+.footer__column {
+    width: 33%;
+    justify-content: center;
+    padding: 10px;
+}
+
+.footer__text {
+    font-weight: 600;
+    font-family: "Saira ", sans-serif;
+    color: #ab8950;
+}
+
+.footer__h2 {
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 38px;
+    font-style: italic;
+    font-weight: 600;
+    font-family: "Saira ", sans-serif;
+    color: #ab8950;
+}
+
+.footer__h3 {
+    font-weight: 600;
+    font-family: "Roboto ", sans-serif;
+    color: #ab8950;
+    line-height: 1.8em;
+    text-align: center;
+}

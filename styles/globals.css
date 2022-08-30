@@ -1,9 +1,11 @@
 html,
 body {
-    padding: 0;
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
     margin: 0;
-    width: 100%;
-    font-family: Ruda, SansSerif, sans-serif;
+    padding: 0;
 }
 
 a {
