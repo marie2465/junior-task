@@ -3,7 +3,7 @@ import styles from "../../styles/MainComponent.module.css";
 const MainComponent = () => {
     return (
         <div className={styles.container}>
-            <div>
+            <div className={styles.container__background}>
                 <div className={styles.main_content}>
                     <img src='/logo.png' alt='Car Concierge' className={styles.container__height} width={300}/>
                 </div>
@@ -15,7 +15,7 @@ const MainComponent = () => {
                 </div>
                 <div>
                     <span className={styles.edit__text}>
-                        Car Concierge has proven that the concept of buying the perfect vehicle online with the help of a professional can work, and work well. <br/>
+                        Car Concierge has proven that the concept of buying the perfect vehicle online with the help of a professional can work, and work well.
                         Clients save time, stress, anxiety, money, and the headache of sitting in a car dealership all day.
                     </span>
                 </div>
