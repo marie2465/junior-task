@@ -1,48 +1,14 @@
 import offer from "../../styles/Offer.module.css";
 import SwipeComponent from "./SwipeComponent";
-import {Swiper, SwiperSlide} from "swiper/react";
-import {Autoplay, Keyboard, Navigation, Pagination} from "swiper";
-import styles from "../../styles/Home.module.css";
 
-const SwiperComponents = () => {
-    const items = [
-        {key: '1', image: '/images/66.jpg'},
-        {key: '2', image: '/images/70.jpg'},
-        {key: '3', image: '/images/76.jpg'},
-        {key: '4', image: '/images/78.jpg'},
-        {key: '5', image: '/images/79.jpg'},
-        {key: '6', image: '/images/66.jpg'},
-    ]
+const SwippersComponents = () => {
     return (
         <div className={offer.offer}>
             <div className={offer.offer__content}>
                 <h2 className={offer.offer__text}>60 Minute Car Concierge Testimonials</h2>
             </div>
             <div className={offer.offer__content}><SwipeComponent/></div>
-            <div><Swiper
-                modules={[Keyboard, Pagination, Navigation, Autoplay]}
-                spaceBetween={30}
-                slidesPerView={2}
-                navigation={true}
-                pagination={{clickable: false}}
-                rewind={true}
-                className={styles.swiper}
-                keyboard={{
-                    enabled: true,
-                }}
-                autoplay={{
-                    delay: 5000,
-                    disableOnInteraction: false,
-                }}
-            >
-                {items.map((item, index) => (
-                    <SwiperSlide key={item.key} virtualIndex={index}>
-                        <img src={item.image} alt={item.key} className={styles.swiper__img}/>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-            </div>
         </div>
     )
 }
-export default SwiperComponents;
+export default SwippersComponents;
