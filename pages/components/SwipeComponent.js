@@ -1,6 +1,6 @@
 import {Navigation, Pagination, Keyboard, Scrollbar, A11y, Autoplay} from 'swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
-import styles from '../../styles/Home.module.css'
+import styles from '../../styles/Home.module.scss'
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";

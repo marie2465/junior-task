@@ -1,12 +1,12 @@
-import footer from "../../styles/Footer.module.css";
+import footer from "../../styles/Footer.module.scss";
 import Link from "next/link";
 
 const FooterComponent = () => {
     return (
-        <div className={footer.footer}>
+        <footer className={footer.footer}>
             <div className={footer.footer__row}>
                 <div className={footer.footer__column}>
-                    <img src="/logo.png" alt="logo" height={120} width={360}/>
+                    <img src="/logo.png" alt="logo" className={footer.footer__img}/>
                 </div>
                 <div className={footer.footer__column}>
                     <div>
@@ -40,23 +40,21 @@ const FooterComponent = () => {
                     </div>
                 </div>
             </div>
-            <div className={footer.footer__row}>
-                <div className={footer.footer__unity}>
-                    <div className={footer.footer__privacy}>
+            <div className={footer.footer__privacy}>
+                <div className={footer.footer__privacy}>
                         <span className={footer.footer__textY}>Copyright © 2022 60minutecar | Car concierge is revolutionizing the car buying experience. All rights reserved.
                             <Link href='#'>
                                 <a className={footer.footer__link}>Privacy Policy</a>
                             </Link>
                         </span>
-                    </div>
-                    <div className={footer.footer__end}>
+                </div>
+                <div className={footer.footer__column}>
                         <span className={footer.footer__textY}>
                             Powered by <Link href='#'><a className={footer.footer__link}>99 Promo</a></Link>
                         </span>
-                    </div>
                 </div>
             </div>
-        </div>
+        </footer>
     );
 }
 

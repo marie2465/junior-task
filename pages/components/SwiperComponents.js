@@ -1,4 +1,4 @@
-import offer from "../../styles/Offer.module.css";
+import offer from "../../styles/Offer.module.scss";
 import SwipeComponent from "./SwipeComponent";
 
 const SwippersComponents = () => {

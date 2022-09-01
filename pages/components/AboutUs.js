@@ -1,5 +1,5 @@
-import offer from "../../styles/Offer.module.css";
-import about from "../../styles/AboutUs.module.css";
+import offer from "../../styles/Offer.module.scss";
+import about from "../../styles/AboutUs.module.scss";
 
 const AboutUs = () => {
     return (
@@ -20,7 +20,7 @@ const AboutUs = () => {
                         the rewards.
                     </div>
                 </div>
-                <div className={about.about__div}>
+                <div>
                     <button className={about.about__button}>Read more</button>
                 </div>
                 <div className={about.about__separator}></div>

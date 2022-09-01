@@ -1,17 +1,17 @@
-import styles from "../../styles/MainComponent.module.css";
+import styles from "../../styles/MainComponent.module.scss";
 
 const MainComponent = () => {
     return (
-        <div className={styles.container}>
-            <div className={styles.container__background}>
+        <div className={styles.main}>
+            <div className={styles.main__background}>
                 <div className={styles.main_content}>
-                    <img src='/logo.png' alt='Car Concierge' className={styles.container__height} width={300}/>
+                    <img src='/logo.png' alt='Car Concierge' className={styles.main__title} width={300}/>
                 </div>
                 <div className={styles.main_content}>
-                    <span className={styles.text}>Car Concierge</span>
+                    <span className={styles.main__title}>Car Concierge</span>
                 </div>
                 <div className={styles.main_content}>
-                    <span className={styles.heading__text}>Let us do the car shopping and you do the driving!</span>
+                    <span className={styles.main__text}>Let us do the car shopping and you do the driving!</span>
                 </div>
                 <div>
                     <span className={styles.edit__text}>
@@ -31,11 +31,11 @@ const MainComponent = () => {
                         </div>
                         <div className={styles.forms__div}>
                             <div>
-                                <input type={"email"} className={styles.forms__input}
+                                <input type={"text"} className={styles.forms__input}
                                        placeholder="Enter your email or phone"/>
                             </div>
                             <div>
-                                <button className={styles.button_submit}>
+                                <button className={styles.button__submit}>
                                     Submit
                                 </button>
                             </div>
@@ -47,7 +47,7 @@ const MainComponent = () => {
                                 <h4 className={styles.forms_text}>Get Free 60MinuteCar App for Google Chrome</h4>
                             </div>
                             <div>
-                                <button className={styles.button_submit}>
+                                <button className={styles.button__submit}>
                                     Submit
                                 </button>
                             </div>

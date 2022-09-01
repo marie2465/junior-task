@@ -1,0 +1,166 @@
+.main {
+  background-image: url("../public/60minutecarbackgound.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  &_content {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  &__height {
+    margin: 20px 0;
+  }
+
+  &__title {
+    color: #fad98c;
+    font-size: 69px;
+    font-weight: 600;
+    font-family: "Saira", sans-serif;
+    font-style: italic;
+    text-align: center;
+  }
+
+  &__text {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    align-content: center;
+    text-align: center;
+    margin: 0 0 20px 0;
+    color: white;
+  }
+
+  .edit__text {
+    color: #ab8950;
+    margin: 0 0 30px 0;
+    align-content: start;
+    white-space: pre-wrap;
+  }
+}
+
+
+.button {
+  color: white;
+  background: #ab8950;
+  border: transparent solid 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 12px 24px;
+  letter-spacing: 3.5px;
+  border-radius: 3px;
+
+  &:hover {
+    background: #fad98c;
+    color: #152633;
+  }
+
+  &__submit {
+    background: #fad98c;
+    color: #152633;
+    border: transparent solid 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 12px 24px;
+    border-radius: 3px;
+    margin: 0 10px;
+  }
+}
+
+.forms {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  &__container {
+    flex: 1 1 100%;
+    border-radius: 4px;
+    border: #fad98c solid 1px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+  }
+
+  &__input {
+    border-radius: 4px;
+    border: 1px solid #ebeced;
+    padding: 8px 12px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+      color: #0f0f0f;
+      font-weight: 600;
+      font-size: 14px;
+      word-spacing: normal;
+      letter-spacing: normal;
+    }
+  }
+
+  &__div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &_text {
+    color: #fad98c;
+  }
+}
+
+
+.elementor__shape {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 90%);
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+  .forms {
+    &__input {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .forms {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .forms {
+    &__div {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  .main {
+    &__title {
+      font-size: 36px;
+    }
+  }
+}
+
+
